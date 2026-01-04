@@ -4,7 +4,8 @@ services:
      image: wordpress:latest
      restart: unless-stopped
      ports:
-       - '8080:80' 
+       - '8081:80'
+       - '443:443'
      environment:
        WORDPRESS_DB_HOST: wordpress_db 
        WORDPRESS_DB_USER: wordpress
