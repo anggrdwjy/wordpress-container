@@ -1,6 +1,6 @@
 services:
    wordpress_app:
-     container_name: wordpress
+     container_name: wordpress_app
      image: wordpress:latest
      restart: unless-stopped
      ports:
@@ -16,7 +16,7 @@ services:
        - wordpress_files:/var/www/html
 
    wordpress_db:
-     container_name: 
+     container_name: wordpress_db
      image: mysql:latest
      restart: unless-stopped
      environment:
