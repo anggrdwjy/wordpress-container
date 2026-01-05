@@ -93,7 +93,7 @@ Dashboard UI Portainer
 https://ip-address:19443
 ```
 
-NOTES : Please Harderning After Installation with SSL or Reverse Proxy. Hide
+NOTES : Please Harderning After Installation with SSL or Reverse Proxy and Hide Default Login
 
 Default Dashboard Wordpress
 
