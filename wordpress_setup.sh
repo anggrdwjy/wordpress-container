@@ -10,8 +10,8 @@ mkdir /home/portainer
 mkdir /home/wordpress
 mkdir /home/wordpress/wordpress_file
 mkdir /home/wordpress/db_data
-cp support/docker-portainer.yml /home/portainer/docker-compose.yml
-cp support/docker-wordpress.yml /home/wordpress/docker-compose.yml
+cp docker-portainer.yml /home/portainer/docker-compose.yml
+cp docker-wordpress.yml /home/wordpress/docker-compose.yml
 cd /home/portainer && docker-compose up -d
 cd /home/wordpress && docker-compose up -d
 docker ps -a
