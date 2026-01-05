@@ -25,10 +25,6 @@ Receiving objects: 100% (22/22), 6.52 KiB | 444.00 KiB/s, done.
 Resolving deltas: 100% (4/4), done.
 root@ubuntu:/home/ubuntu# cd wordpress-container/
 root@ubuntu:/home/ubuntu/wordpress-container# chmod -R 777 *
-root@ubuntu:/home/ubuntu/wordpress-container# ls -l
-total 8
-drwxrwxrwx 2 root root 4096 Jan  5 01:25 support
--rwxrwxrwx 1 root root  784 Jan  5 01:25 wordpress_setup.sh
 root@ubuntu:/home/ubuntu#
 ```
 
