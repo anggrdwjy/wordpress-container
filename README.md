@@ -25,7 +25,6 @@ Receiving objects: 100% (22/22), 6.52 KiB | 444.00 KiB/s, done.
 Resolving deltas: 100% (4/4), done.
 root@ubuntu:/home/ubuntu# cd wordpress-container/
 root@ubuntu:/home/ubuntu/wordpress-container# chmod -R 777 *
-root@ubuntu:/home/ubuntu#
 ```
 
 ## Running Program
@@ -44,6 +43,7 @@ Reading package lists... Done
 Reading package lists... Done
 Building dependency tree... Done
 Reading state information... Done
+* * * * * *
 * * * * * *
 CONTAINER ID   IMAGE                        COMMAND                  CREATED          STATUS         PORTS                                                                              NAMES
 a5f160c3405d   wordpress:latest             "docker-entrypoint.s…"   7 seconds ago    Up 4 seconds   0.0.0.0:443->443/tcp, [::]:443->443/tcp, 0.0.0.0:8081->80/tcp, [::]:8081->80/tcp   wordpress_app
@@ -79,7 +79,6 @@ a5f160c3405d   wordpress:latest             "docker-entrypoint.s…"   3 minutes
 4191387f2e66   portainer/portainer-ce:lts   "/portainer"             9 minutes ago   Up 8 minutes   8000/tcp, 9000/tcp, 0.0.0.0:19443->9443/tcp, [::]:19443->9443/tcp                  portainer
 root@ubuntu:/home/ubuntu/wordpress-container# 
 ```
-
 
 ## Testing Access Web UI
 
