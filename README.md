@@ -27,6 +27,24 @@ root@ubuntu:/home/ubuntu# cd wordpress-container/
 root@ubuntu:/home/ubuntu/wordpress-container# chmod -R 777 *
 ```
 
+## Edit File .env
+
+Please Edit Your Username, Password, Secure Password for Database.
+
+```
+#WORDPRESS_ENVIRONMENT
+WORDPRESS_DB_HOST=wordpress_db
+WORDPRESS_DB_NAME=mysql_db
+WORDPRESS_DB_USER=mysql_user
+WORDPRESS_DB_PASSWORD=mysql_password
+
+#MYSQL_DATABASE
+MYSQL_ROOT_PASSWORD=mysql_root_securepassword
+MYSQL_DATABASE=wordpress_db
+MYSQL_USER=wordpress_user
+MYSQL_PASSWORD=wordpress_password
+```
+
 ## Running Program
 ```
 root@ubuntu:/home/ubuntu/wordpress-container# ./wordpress_setup.sh 
