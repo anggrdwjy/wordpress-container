@@ -11,12 +11,13 @@ mkdir /home/wordpress
 mkdir /home/wordpress/wordpress_file
 mkdir /home/wordpress/db_data
 cp docker-portainer.yml /home/portainer/docker-compose.yml
+cp .env /home/wordpress/.env
 cp docker-wordpress.yml /home/wordpress/docker-compose.yml
 cd /home/portainer && docker-compose up -d
 cd /home/wordpress && docker-compose up -d
 docker ps -a
 ufw allow 22
-ufw allow 8080
+ufw allow 8081
 ufw allow 19443
 ufw enable
 systemctl status ufw
