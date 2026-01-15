@@ -2,15 +2,15 @@ services:
    wordpress_app:
      container_name: wordpress_app
      image: wordpress:latest
-     restart: unless-stopped
+     restart: always
      ports:
        - '8081:80'
-       - '443:443'
      environment:
-       WORDPRESS_DB_HOST: wordpress_db 
-       WORDPRESS_DB_USER: wordpress
-       WORDPRESS_DB_PASSWORD: wordpress
-       WORDPRESS_DB_NAME: wordpress
+       WORDPRESS_DB_HOST: ${WORDPRESS_DB_HOST}
+       WORDPRESS_DB_NAME: ${WORDPRESS_DB_NAME}
+       WORDPRESS_DB_USER: ${WORDPRESS_DB_USER}
+       WORDPRESS_DB_PASSWORD: ${WORDPRESS_DB_PASSWORD}
+
      depends_on:
        - wordpress_db
      volumes:
@@ -19,12 +19,12 @@ services:
    wordpress_db:
      container_name: wordpress_db
      image: mysql:latest
-     restart: unless-stopped
+     restart: always
      environment:
-       MYSQL_ROOT_PASSWORD: wordpress
-       MYSQL_DATABASE: wordpress
-       MYSQL_USER: wordpress
-       MYSQL_PASSWORD: wordpress
+       MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
+       MYSQL_DATABASE: ${MYSQL_DATABASE}
+       MYSQL_USER: ${MYSQL_USER}
+       MYSQL_PASSWORD: ${MYSQL_PASSWORD}
      volumes:
        - db_data:/var/lib/mysql
 
