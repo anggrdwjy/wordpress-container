@@ -1,19 +1,25 @@
-## This Script Automation For Build Wordpress on Docker Compose
+## A. Overview Docker Wordpress
 
-## Information
+#### Information
+*[A. Overview Docker Wordpress](#a-overview-docker-wordpress)
+*[B. Installing Program](#b-installing-program)
+*[C. Edit File ENV](#c-edit-file-env)
+*[D. Running Program](#d-running-program)
+*[E. Verification](#e-verification)
+*[F. Testing](#f-testing)
 
-Before using this program, make sure to update the repository `sudo apt update` and install git `sudo apt install git -y` to maximize the running of the program. I am not responsible for any consequences caused by this program. It is recommended to use this script when the new server is installed. This program has been tested on Ubuntu Server 24.04 or Newer
-
-## Features
+#### Features
 * Simple Script For Build Wordpress
 * Include Portainer for Manage Docker Container
 * Activation Firewall
 
-## Tested Version
+#### Tested Version
 * Ubuntu 24.04
 * Newer
 
-## Installing Program
+## B. Installing Program
+Before using this program, make sure to update the repository `sudo apt update` and install git `sudo apt install git -y` to maximize the running of the program. I am not responsible for any consequences caused by this program. It is recommended to use this script when the new server is installed. This program has been tested on Ubuntu Server 24.04 or Newer
+
 ```
 root@ubuntu:/home/ubuntu# git clone https://github.com/anggrdwjy/wordpress-container.git
 Cloning into 'wordpress-container'...
@@ -27,10 +33,9 @@ root@ubuntu:/home/ubuntu# cd wordpress-container/
 root@ubuntu:/home/ubuntu/wordpress-container# chmod -R 777 *
 ```
 
-## Edit File .env
+## C. Edit File ENV
 
-Please Edit Your Username, Password, Secure Password for Database.
-
+#### Please Edit Your Username, Password, Secure Password for Database.
 ```
 #WORDPRESS_ENVIRONMENT
 WORDPRESS_DB_HOST=wordpress_db
@@ -45,7 +50,7 @@ MYSQL_USER=wordpress_user
 MYSQL_PASSWORD=wordpress_password
 ```
 
-## Running Program
+## D. Running Program
 ```
 root@ubuntu:/home/ubuntu/wordpress-container# ./wordpress_setup.sh 
 Hit:1 http://id.archive.ubuntu.com/ubuntu noble InRelease
@@ -88,7 +93,7 @@ root@ubuntu:/home/ubuntu/wordpress-container#
 
 ```
 
-## Verification Docker
+## E. Verification
 ```
 root@ubuntu:/home/ubuntu/wordpress-container# docker ps -a
 CONTAINER ID   IMAGE                        COMMAND                  CREATED         STATUS         PORTS                                                                              NAMES
@@ -98,9 +103,8 @@ a5f160c3405d   wordpress:latest             "docker-entrypoint.s…"   3 minutes
 root@ubuntu:/home/ubuntu/wordpress-container# 
 ```
 
-## Testing Access Web UI
-
-Dashboard UI Portainer
+## F. Testing
+#### 1. Dashboard UI Portainer
 
 ```
 https://ip-address:19443
@@ -108,14 +112,12 @@ https://ip-address:19443
 
 NOTES : Please Harderning After Installation with SSL or Reverse Proxy and Hide Default Login
 
-Default Dashboard Wordpress
-
+#### 2. Default Dashboard Wordpress
 ```
 http://ip-address:8080
 ```
 
-Default Login Wordpress Admin
-
+#### 3. Default Login Wordpress Admin
 ```
 http://ip-address:8080/wp-admin
 ```
