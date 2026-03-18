@@ -1,12 +1,12 @@
 ## A. Overview Docker Wordpress
 
 #### Information
-*[A. Overview Docker Wordpress](#a-overview-docker-wordpress)
-*[B. Installing Program](#b-installing-program)
-*[C. Edit File ENV](#c-edit-file-env)
-*[D. Running Program](#d-running-program)
-*[E. Verification](#e-verification)
-*[F. Testing](#f-testing)
+* [A. Overview Docker Wordpress](#a-overview-docker-wordpress)
+* [B. Installing Program](#b-installing-program)
+* [C. Edit File ENV](#c-edit-file-env)
+* [D. Running Program](#d-running-program)
+* [E. Verification](#e-verification)
+* [F. Testing](#f-testing)
 
 #### Features
 * Simple Script For Build Wordpress
