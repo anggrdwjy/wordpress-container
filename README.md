@@ -132,7 +132,7 @@ http://ip-address:8080/wp-admin
 * [🔔 Subscribe me on Youtube](https://www.youtube.com/@anggarda.wijaya)
 
 
-## Bugs
+#### Bugs
 
 Please open an issue on GitHub with as much information as possible if you found a bug.
 * Your Docker Version
