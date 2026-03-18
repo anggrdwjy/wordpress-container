@@ -1,5 +1,9 @@
 ## A. Overview Docker Wordpress
 
+<p align="center">
+<img src="img/wordpressd.png">
+</p>
+
 #### Information
 * [A. Overview Docker Wordpress](#a-overview-docker-wordpress)
 * [B. Installing Program](#b-installing-program)
